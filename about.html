@@ -3,60 +3,165 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Sips Coffee Corner</title>
+  <meta name="description" content="Learn the story behind Sips Coffee Corner, a cozy Berlin neighborhood cafe built around slow mornings and careful coffee.">
+  <title>About | Sips Coffee Corner</title>
   <link rel="stylesheet" href="style.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <header class="site-header small-header">
-    <nav class="navbar">
-      <a class="brand" href="index.html">Sips Coffee Corner</a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-      <ul>
+  <header>
+    <nav class="nav" data-nav aria-label="Main navigation">
+      <a class="nav-logo" href="index.html" aria-label="Sips Coffee Corner home">
+        <span class="nav-logo-mark"><img src="Sip Logo.png" alt="" width="56" height="56"></span>
+        <span class="nav-logo-text">Sips Coffee Corner</span>
+      </a>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About us</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a class="active" aria-current="page" href="about.html">About</a></li>
+        <li><a href="contact.html">Find us</a></li>
       </ul>
+      <div class="nav-right">
+        <a class="btn btn-dark nav-cta" href="contact.html">Come say hi</a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle><span></span></button>
+      </div>
     </nav>
-
-    <section class="page-title">
-      <h1>Every sip feels soft.</h1>
-    </section>
+    <div class="mobile-panel" data-mobile-panel>
+      <nav aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Find us</a>
+        <a class="btn btn-primary" href="contact.html">Come say hi</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="about-section">
-      <div>
-        <h2>A tiny corner for cozy coffee moments.</h2>
-
-        <p>
-          Sips Coffee Corner began with a simple idea: coffee should feel warm,
-          playful, and part of your daily rhythm. We created our shop for people
-          who want more than just a drink — they want a small pause.
-        </p>
-
-        <p>
-          Our mission is to serve fresh coffee with care, create a cozy atmosphere,
-          and make every guest feel welcome. From the first sip to the last, we want
-          every cup to bring comfort, softness, and a little bit of joy.
-        </p>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">About us</span>
+        <h1>Every sip<br>feels soft.</h1>
+        <p>A tiny Berlin corner for warm cups, slow starts, and the kind of coffee moments you actually remember.</p>
       </div>
+    </section>
 
-      <figure>
-        <img
-          src="https://images.pexels.com/photos/4816437/pexels-photo-4816437.jpeg"
-          alt="Coffee cup in a cozy setting"
-        >
-      </figure>
+    <section class="section">
+      <div class="container split reverse">
+        <div class="story-grid reveal">
+          <figure class="image-card"><img src="https://images.pexels.com/photos/20011903/pexels-photo-20011903.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Warm cafe interior" loading="lazy"></figure>
+          <figure class="image-card"><img src="https://images.pexels.com/photos/4816437/pexels-photo-4816437.jpeg?auto=compress&cs=tinysrgb&w=650" alt="Coffee cup in warm light" loading="lazy"></figure>
+          <figure class="image-card"><img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=650" alt="Coffee with latte art" loading="lazy"></figure>
+        </div>
+        <div class="copy-stack reveal">
+          <span class="eyebrow">The beginning</span>
+          <h2>A small pause in the middle of the city.</h2>
+          <p class="lead">Sips Coffee Corner began with a simple idea: coffee should feel warm, playful, and part of your daily rhythm.</p>
+          <p>We built Sips for people who want more than a quick drink. Students settle into the window seats. Remote workers find the quiet table. Friends stay a little longer than planned. The coffee is serious, but the feeling is soft.</p>
+          <p>From the first sip to the last, we want every cup to bring comfort, care, and a little bit of Berlin spirit.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow">What we believe</span>
+            <h2>Warm, careful,<br>never rushed.</h2>
+          </div>
+        </div>
+        <div class="values-grid">
+          <article class="card value-card reveal">
+            <div class="value-num">01</div>
+            <h3 class="value-title">Coffee should feel human.</h3>
+            <p class="value-desc">We keep the menu focused, the service kind, and the atmosphere easy to settle into.</p>
+          </article>
+          <article class="card value-card reveal">
+            <div class="value-num">02</div>
+            <h3 class="value-title">Quality can be gentle.</h3>
+            <p class="value-desc">Good beans, careful milk texture, and consistent recipes — without the gatekeeping.</p>
+          </article>
+          <article class="card value-card reveal">
+            <div class="value-num">03</div>
+            <h3 class="value-title">The neighborhood comes first.</h3>
+            <p class="value-desc">We source locally where we can and try to be the kind of place people feel proud to have nearby.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow">The people</span>
+            <h2>The team behind<br>the morning.</h2>
+          </div>
+        </div>
+        <div class="team-grid">
+          <article class="card team-card reveal">
+            <figure class="team-photo"><img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Lena Fischer" loading="lazy"></figure>
+            <div class="team-name">Lena Fischer</div>
+            <div class="team-role">Co-founder & Head Barista</div>
+            <p class="team-bio">Former architect turned coffee obsessive. Lena designed the space and pulls every shot with the same precision.</p>
+          </article>
+          <article class="card team-card reveal">
+            <figure class="team-photo"><img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Milo Brandt" loading="lazy"></figure>
+            <div class="team-name">Milo Brandt</div>
+            <div class="team-role">Co-founder & Roasting</div>
+            <p class="team-bio">Milo sources the beans and obsesses over roast profiles. He is the reason the filter is always exceptional.</p>
+          </article>
+          <article class="card team-card reveal">
+            <figure class="team-photo"><img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Sara Kim" loading="lazy"></figure>
+            <div class="team-name">Sara Kim</div>
+            <div class="team-role">Barista & Morning Person</div>
+            <p class="team-bio">Sara opens the shop most days and genuinely loves mornings. She has probably already thought about your flat white.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark philosophy">
+      <div class="container reveal">
+        <div class="philosophy-quote">“Soft coffee for slow mornings. That is all we ever wanted to make.”</div>
+        <div class="philosophy-attr">Lena Fischer · Co-founder, Sips Coffee Corner</div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2026 Sips Coffee Corner</p>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img class="footer-logo" src="Sip Logo.png" alt="Sips Coffee Corner logo" width="48" height="48">
+          <p class="footer-tagline">Soft coffee for slow mornings. Berlin, since 2023.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Navigate</div>
+          <a class="footer-link" href="index.html">Home</a>
+          <a class="footer-link" href="menu.html">Menu</a>
+          <a class="footer-link" href="about.html">About</a>
+          <a class="footer-link" href="contact.html">Find us</a>
+        </div>
+        <div>
+          <div class="footer-heading">Visit</div>
+          <p class="footer-text">Kastanienallee 12<br>10435 Berlin<br>Prenzlauer Berg</p>
+        </div>
+        <div>
+          <div class="footer-heading">Say hi</div>
+          <a class="footer-link" href="mailto:bvlsebastian@gmail.com">bvlsebastian@gmail.com</a>
+          <a class="footer-link" href="tel:+491774768510">+49 177 476 8510</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Sips Coffee Corner · Berlin</span>
+        <span>Soft sips, serious taste.</span>
+      </div>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

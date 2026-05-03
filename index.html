@@ -3,105 +3,291 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sips Coffee Corner | Home</title>
+  <meta name="description" content="Sips Coffee Corner is a cozy Berlin coffee shop for soft mornings, creamy drinks, and warm little pauses.">
+  <title>Sips Coffee Corner | Soft coffee for slow mornings</title>
   <link rel="stylesheet" href="style.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <header class="site-header">
-    <nav class="navbar">
-      <a class="brand brand-logo" href="index.html">
-  <img src="Sip Logo.png" alt="Sips Coffee Corner logo">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <nav class="nav" data-nav aria-label="Main navigation">
+      <a class="nav-logo" href="index.html" aria-label="Sips Coffee Corner home">
+        <span class="nav-logo-mark"><img src="Sip Logo.png" alt="" width="56" height="56"></span>
+        <span class="nav-logo-text">Sips Coffee Corner</span>
       </a>
 
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About us</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <ul class="nav-links">
+        <li><a class="active" aria-current="page" href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Find us</a></li>
       </ul>
+
+      <div class="nav-right">
+        <a class="btn btn-dark nav-cta" href="contact.html">Come say hi</a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle><span></span></button>
+      </div>
     </nav>
 
-<section class="hero">
-
-  <h1>Soft coffee for slow mornings.</h1>
-
-  <p class="hero-text">
-    Creamy coffee. Cozy corner. Soft mornings, warm cups, and a little Berlin attitude.
-  </p>
-
-  <a class="button" href="contact.html">Come say hi</a>
-</section>
-
+    <div class="mobile-panel" data-mobile-panel>
+      <nav aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Find us</a>
+        <a class="btn btn-primary" href="contact.html">Come say hi</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="intro-section">
-      <div>
-        <p class="eyebrow">Today’s mood</p>
-        <h2>Soft sips, serious taste.</h2>
-        <p>
-          A warm neighborhood coffee spot for slow mornings, creamy drinks,
-          and cozy little pauses in the middle of the city.
-        </p>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <picture class="hero-bg" aria-hidden="true">
+        <img src="https://images.pexels.com/photos/20011903/pexels-photo-20011903.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="" fetchpriority="high">
+      </picture>
+      <div class="container hero-content">
+        <div class="hero-kicker animate-in">Prenzlauer Berg · Berlin</div>
+        <h1 id="hero-title" class="animate-in delay-1">Soft coffee<br>for slow mornings.</h1>
+        <p class="hero-sub animate-in delay-2">Creamy coffee. Cozy corner. A warm little pause in the middle of the city, made for students, creatives, remote workers, and anyone who wants to slow down.</p>
+        <div class="hero-actions animate-in delay-3">
+          <a class="btn btn-primary" href="menu.html">View our menu <span aria-hidden="true">→</span></a>
+          <a class="btn btn-outline-light" href="about.html">Our story</a>
+        </div>
+        <div class="hero-meta animate-in delay-4" aria-label="Shop highlights">
+          <p><strong>08:00</strong> morning doors open</p>
+          <p><strong>4.9 ★</strong> neighborhood love</p>
+          <p><strong>slow</strong> never rushed</p>
+        </div>
       </div>
-  <figure>
-    <img
-      src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZPq6HWDgEDmh2qsvQUSxDhIr-BH0H7_IyeN52czWFVZ8DY3G7CWY0yOsEvHkcqdON4BPqfgpoBqUiVt3OlS-kHXBPOzWXNOT1iTloHQU1pi5b4Ly8PEo37WdalJmY92O073apS_d4v82ett_maEqJ6vDxPYoWafoz9xC3-J6kOhJIxl-EgetLctcvSJU0PZH2KhSukOiap5OW0N2PRRVQfGSnA7Axu007SXB2etAH690h5-esDOqiggW6VwPPyO1tlxP5pjVa16Zk"
-      alt="Cozy coffee shop detail"
-    >
-      </figure>
     </section>
 
-<section class="menu-section">
-  <p class="eyebrow">Menu preview</p>
-  <h2>Little drinks, big mood.</h2>
+    <section class="section section-soft" data-special>
+      <div class="container mood-grid">
+        <div class="copy-stack reveal">
+          <span class="eyebrow" data-special-label>Today's mood</span>
+          <h2 class="special-title" data-special-name>Oat Cortado</h2>
+          <p class="special-sub" data-special-sub>with cinnamon foam</p>
+          <p class="special-desc" data-special-desc>Silky oat milk poured gently over a warm ristretto. Dusted with cinnamon. Best enjoyed without a plan.</p>
+          <div class="special-controls">
+            <span class="special-price" data-special-price>€ 4.20</span>
+            <div class="dot-row" data-special-dots aria-label="Choose featured drink"></div>
+          </div>
+        </div>
+        <figure class="image-card reveal">
+          <img data-special-img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Oat Cortado at Sips Coffee Corner" loading="lazy">
+          <figcaption class="float-badge"><strong>Today’s special</strong><span>Ask for the soft foam. We make it slowly.</span></figcaption>
+        </figure>
+      </div>
+    </section>
 
-  <div class="menu-preview">
-    <article>
-      <img
-        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJmXBfTojAgQmzjeJlSd4EXZ_fRR0Q7DE39l3N2tcpgi5NAx-JOyECk2BunFU_LtU3VR4XStvZEdSgGO5EpXVYAbehU3-3r_xUcnnAK8XBMk2nLokRgKh9Nfep_l5YEIUoHr45d_WqvU_ElGZYvbj_U1OBZDW9em1bufBkaLqTaZRkLQYdg9cP6dtD2QYW0IOmqyN3_D5JnF5VJzTg_jVh6DOSf9kaxCAxvy7PvUvsyPr_ti4muuDSTQLpGPQlJvAUmAXVSA448gf5"
-        alt="Flat white coffee"
-      >
-      <h3>Flat White</h3>
-      <p>Silky microfoam over a double ristretto.</p>
-    </article>
+    <section class="section">
+      <div class="container split">
+        <div class="copy-stack reveal">
+          <span class="eyebrow">Our story</span>
+          <h2>A tiny corner for cozy coffee moments.</h2>
+          <p class="lead">Sips Coffee Corner began with a simple idea: coffee should feel warm, playful, and part of your daily rhythm.</p>
+          <p>We created our shop for people who want more than just a drink — they want a small pause. From the first sip to the last, every cup is made with care, softness, and a little bit of Berlin spirit.</p>
+          <a class="btn btn-ghost" href="about.html">Read the full story <span aria-hidden="true">→</span></a>
+        </div>
+        <figure class="image-card reveal">
+          <img src="https://images.pexels.com/photos/4816437/pexels-photo-4816437.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="A coffee cup in a cozy setting" loading="lazy">
+        </figure>
+      </div>
+    </section>
 
-    <article>
-      <img
-        src="https://lh3.googleusercontent.com/aida-public/AB6AXuASXSusJ06hcEeG-tidG22hxY3jrKgE7xg-CcSvogRZQtWFSG-0KVQo-1x099yQb3VWU-jVVrmVHKZbKAGeuZgB37WGpaeAGXA1hzRcXGaFPgeMglzAG8dqFA7luv69Gh3jH_CwDssOWjfsu0ML8Y6AtnlJzQ0BZ8jB22UUiFZazWJ6u7F5h3uYmYIQIG7WE5VRM9S9U7n-ceQlR72JgT7i6b9KZbMTVm6-Fh64WtZgR4yk9BMlTyozMlFhHPoyItDLjMiv4lWrrL2g"
-        alt="Iced matcha latte"
-      >
-      <h3>Iced Matcha</h3>
-      <p>Ceremonial grade, whisked to order.</p>
-    </article>
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow">What we serve</span>
+            <h2>Little drinks,<br>big mood.</h2>
+            <p>Our menu is small on purpose: espresso classics, seasonal matcha, rotating filters, and a few evening extras.</p>
+          </div>
+          <a class="btn btn-outline" href="menu.html">Full menu <span aria-hidden="true">→</span></a>
+        </div>
 
-    <article>
-      <img
-        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr1Y_PwW7kKEsWrlWss1hoZkUE-HK2OQfSm9hq6AaZTmOqgPId6Hb1lXvgv3yrIoXLrvP7t3GyW1wIISHsdLRVu_Ak2v5GM9ei7HnEDYtT2FlfjKl6qyBGrmsg5G_TzCWi4Wg_GBCHTFrWfUt4U_UcpEXGLs5YJpkeGAvVpVSUfWtNh5CfV-kGR8xKkwdqOvLkyavO4u9IRo7dwAVFjavRFcpY8Gw1Gbv0b_IlA_3v86nR4lJTEQQNmaXkRO61BLr_YMht8zJG9BUA"
-        alt="Filter coffee"
-      >
-      <h3>Filter Coffee</h3>
-      <p>Rotating single origins, batch brewed.</p>
-    </article>
+        <div class="menu-grid">
+          <article class="card reveal menu-card accent-terra">
+            <div class="menu-card-img"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJmXBfTojAgQmzjeJlSd4EXZ_fRR0Q7DE39l3N2tcpgi5NAx-JOyECk2BunFU_LtU3VR4XStvZEdSgGO5EpXVYAbehU3-3r_xUcnnAK8XBMk2nLokRgKh9Nfep_l5YEIUoHr45d_WqvU_ElGZYvbj_U1OBZDW9em1bufBkaLqTaZRkLQYdg9cP6dtD2QYW0IOmqyN3_D5JnF5VJzTg_jVh6DOSf9kaxCAxvy7PvUvsyPr_ti4muuDSTQLpGPQlJvAUmAXVSA448gf5" alt="Flat white coffee" loading="lazy" style="object-position: 50% 58%;"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-cat">Espresso</div>
+              <div class="menu-card-progress" aria-hidden="true"><span></span></div>
+              <h3 class="menu-card-name">Flat White</h3>
+              <p class="menu-card-desc">Silky microfoam over a double ristretto. Best enjoyed warm and unhurried.</p>
+              <div class="menu-card-foot"><span class="menu-price">€ 3.80</span><span class="tag tag-terra tag-with-icon"><span class="tag-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.35-7-10a4 4 0 0 1 7-2.65A4 4 0 0 1 19 10c0 5.65-7 10-7 10Z"></path></svg></span><span>House fave</span></span></div>
+            </div>
+          </article>
 
-    <article>
-      <img
-        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXNnuwW56F3tYgJg8kgqfkgNemQAzRXhQEIABpYTApFxxShGhXW6sZqS73vsmLyp0vm1eFtUAkalywSjPIknaL7xGxFjWqv_Erhmf9R0KECMQ_NPjdV2jZfkkw8O2AqFhoKjXJrRORM0OLOUChmzBuTmqXXWmAAuYLuQ_giCsIJl07qeLHIgtfej28HugXIvJ9RZmtVPAliEKnE2OacanYuaASx7GyW-C05BQ4w_fY2hPiuYfd-0wY0SremL8eBTPsH2s3GjBblR5M"
-        alt="Espresso martini"
-      >
-      <h3>Espresso Martini</h3>
-      <p>Dark, bold, chilled, and a little extra.</p>
-    </article>
-  </div>
-</section>
+          <article class="card reveal menu-card accent-sage">
+            <div class="menu-card-img"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuASXSusJ06hcEeG-tidG22hxY3jrKgE7xg-CcSvogRZQtWFSG-0KVQo-1x099yQb3VWU-jVVrmVHKZbKAGeuZgB37WGpaeAGXA1hzRcXGaFPgeMglzAG8dqFA7luv69Gh3jH_CwDssOWjfsu0ML8Y6AtnlJzQ0BZ8jB22UUiFZazWJ6u7F5h3uYmYIQIG7WE5VRM9S9U7n-ceQlR72JgT7i6b9KZbMTVm6-Fh64WtZgR4yk9BMlTyozMlFhHPoyItDLjMiv4lWrrL2g" alt="Iced matcha latte" loading="lazy" style="object-position: center 62%;"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-cat">Matcha</div>
+              <div class="menu-card-progress" aria-hidden="true"><span></span></div>
+              <h3 class="menu-card-name">Iced Matcha</h3>
+              <p class="menu-card-desc">Ceremonial grade, whisked to order. Cold, grounding, and a little green.</p>
+              <div class="menu-card-foot"><span class="menu-price">€ 4.50</span><span class="tag tag-sage tag-with-icon"><span class="tag-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 21c8 0 12-6 12-14-8 0-12 6-12 14Z"></path><path d="M6 21c0-7 5-11 12-14"></path></svg></span><span>Vegan</span></span></div>
+            </div>
+          </article>
+
+          <article class="card reveal menu-card accent-espresso">
+            <div class="menu-card-img"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr1Y_PwW7kKEsWrlWss1hoZkUE-HK2OQfSm9hq6AaZTmOqgPId6Hb1lXvgv3yrIoXLrvP7t3GyW1wIISHsdLRVu_Ak2v5GM9ei7HnEDYtT2FlfjKl6qyBGrmsg5G_TzCWi4Wg_GBCHTFrWfUt4U_UcpEXGLs5YJpkeGAvVpVSUfWtNh5CfV-kGR8xKkwdqOvLkyavO4u9IRo7dwAVFjavRFcpY8Gw1Gbv0b_IlA_3v86nR4lJTEQQNmaXkRO61BLr_YMht8zJG9BUA" alt="Filter coffee" loading="lazy" style="object-position: center 54%;"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-cat">Filter</div>
+              <div class="menu-card-progress" aria-hidden="true"><span></span></div>
+              <h3 class="menu-card-name">Filter Coffee</h3>
+              <p class="menu-card-desc">Rotating single origins, batch brewed fresh. Ask us what is on today.</p>
+              <div class="menu-card-foot"><span class="menu-price">€ 3.20</span><span class="tag tag tag-linen tag-with-icon"><span class="tag-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v3"></path><path d="M12 18v3"></path><path d="M3 12h3"></path><path d="M18 12h3"></path><path d="m5.64 5.64 2.12 2.12"></path><path d="m16.24 16.24 2.12 2.12"></path><path d="m5.64 18.36 2.12-2.12"></path><path d="m16.24 7.76 2.12-2.12"></path><circle cx="12" cy="12" r="3.5"></circle></svg></span><span>Rotating</span></span></div>
+            </div>
+          </article>
+
+          <article class="card reveal menu-card accent-linen">
+            <div class="menu-card-img"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXNnuwW56F3tYgJg8kgqfkgNemQAzRXhQEIABpYTApFxxShGhXW6sZqS73vsmLyp0vm1eFtUAkalywSjPIknaL7xGxFjWqv_Erhmf9R0KECMQ_NPjdV2jZfkkw8O2AqFhoKjXJrRORM0OLOUChmzBuTmqXXWmAAuYLuQ_giCsIJl07qeLHIgtfej28HugXIvJ9RZmtVPAliEKnE2OacanYuaASx7GyW-C05BQ4w_fY2hPiuYfd-0wY0SremL8eBTPsH2s3GjBblR5M" alt="Espresso martini" loading="lazy" style="object-position: center 50%;"></div>
+            <div class="menu-card-body">
+              <div class="menu-card-cat">Evening</div>
+              <div class="menu-card-progress" aria-hidden="true"><span></span></div>
+              <h3 class="menu-card-name">Espresso Martini</h3>
+              <p class="menu-card-desc">Dark, bold, chilled, and a little extra. Available from 5pm.</p>
+              <div class="menu-card-foot"><span class="menu-price">€ 9.50</span><span class="tag tag-linen tag-with-icon"><span class="tag-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"></path></svg></span><span>After 5pm</span></span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container">
+        <div class="copy-stack reveal">
+          <span class="eyebrow">Work from here</span>
+          <h2>Wifi. Plugs.<br><em style="font-style:italic; color:rgba(255,247,234,0.65);">Good light.</em></h2>
+          <p style="color:rgba(255,247,234,0.65); margin-top:1rem;">Bring your laptop, your notebook, or just your headphones. We saved you a corner.</p>
+        </div>
+
+        <div class="perks-grid">
+          <article class="perk reveal">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M1.5 9a16 16 0 0 1 21 0"/><path d="M8.5 16a6 6 0 0 1 7 0"/><path d="M12 20h.01"/></svg>
+            <h3 class="perk-title">Fast wifi</h3>
+            <p class="perk-desc">Reliable, password-free. Just ask at the counter.</p>
+          </article>
+          <article class="perk reveal">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            <h3 class="perk-title">Power seats</h3>
+            <p class="perk-desc">Sockets near the windows and the long communal table.</p>
+          </article>
+          <article class="perk reveal">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <h3 class="perk-title">No rush</h3>
+            <p class="perk-desc">Stay as long as you like. Your cup will not judge you.</p>
+          </article>
+          <article class="perk reveal">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
+            <h3 class="perk-title">Quiet corners</h3>
+            <p class="perk-desc">A dedicated back area away from the door.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow">What people say</span>
+            <h2>Soft sips,<br>serious love.</h2>
+          </div>
+        </div>
+        <div class="testimonial-grid">
+          <article class="card quote-card reveal">
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <blockquote>“My favorite corner in Berlin. The flat white is perfect and the morning light is just beautiful.”</blockquote>
+            <div class="person"><span class="avatar">MK</span><div><strong>Marie K.</strong><span>Regular · Prenzlauer Berg</span></div></div>
+          </article>
+          <article class="card quote-card reveal">
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <blockquote>“I come here every Monday morning before my week starts. It makes everything feel softer.”</blockquote>
+            <div class="person"><span class="avatar">JW</span><div><strong>Jonas W.</strong><span>Remote worker · Mitte</span></div></div>
+          </article>
+          <article class="card quote-card reveal">
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <blockquote>“Genuinely excellent iced matcha. Calm, warm, and never too loud.”</blockquote>
+            <div class="person"><span class="avatar">PM</span><div><strong>Priya M.</strong><span>Student · FU Berlin</span></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container location-grid">
+        <figure class="image-card map-card reveal">
+          <img src="https://images.pexels.com/photos/20011903/pexels-photo-20011903.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Inside Sips Coffee Corner" loading="lazy">
+        </figure>
+        <article class="location-card reveal">
+          <span class="eyebrow">Find us</span>
+          <h2>Come sip<br>with us.</h2>
+          <p class="info-line">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Kastanienallee 12, 10435 Berlin<br>Prenzlauer Berg</span>
+          </p>
+          <div class="hours">
+            <p class="hours-row"><strong>Mon – Fri</strong><span>08:00 – 19:00</span></p>
+            <p class="hours-row"><strong>Sat – Sun</strong><span>09:00 – 18:00</span></p>
+          </div>
+          <div class="location-actions">
+            <a class="btn btn-primary" href="contact.html">Get in touch</a>
+            <a class="btn btn-outline-light" href="tel:+491774768510">+49 177 476 8510</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section newsletter">
+      <div class="container newsletter-grid">
+        <div class="reveal">
+          <span class="eyebrow" style="color:rgba(255,255,255,0.78);">Stay in the loop</span>
+          <h2>New specials,<br>slow mornings.</h2>
+          <p>Seasonal drinks, tiny events, and the occasional reminder to slow down.</p>
+        </div>
+        <form class="newsletter-form reveal" data-newsletter>
+          <label class="sr-only" for="newsletter-email" style="position:absolute; left:-9999px;">Email</label>
+          <input id="newsletter-email" name="email" type="email" placeholder="your@email.com" required>
+          <button class="btn btn-light" type="submit">Sign me up</button>
+        </form>
+        <div class="form-message" data-newsletter-message>See you tomorrow morning.</div>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <p>© 2026 Sips Coffee Corner</p>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img class="footer-logo" src="Sip Logo.png" alt="Sips Coffee Corner logo" width="48" height="48">
+          <p class="footer-tagline">Soft coffee for slow mornings. Berlin, since 2023.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Navigate</div>
+          <a class="footer-link" href="index.html">Home</a>
+          <a class="footer-link" href="menu.html">Menu</a>
+          <a class="footer-link" href="about.html">About</a>
+          <a class="footer-link" href="contact.html">Find us</a>
+        </div>
+        <div>
+          <div class="footer-heading">Visit</div>
+          <p class="footer-text">Kastanienallee 12<br>10435 Berlin<br>Prenzlauer Berg</p>
+        </div>
+        <div>
+          <div class="footer-heading">Say hi</div>
+          <a class="footer-link" href="mailto:bvlsebastian@gmail.com">bvlsebastian@gmail.com</a>
+          <a class="footer-link" href="tel:+491774768510">+49 177 476 8510</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Sips Coffee Corner · Berlin</span>
+        <span>Soft sips, serious taste.</span>
+      </div>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

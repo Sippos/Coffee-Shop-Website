@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the Sips Coffee Corner menu: espresso classics, filter coffee, matcha, food, and evening drinks.">
+  <title>Menu | Sips Coffee Corner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <nav class="nav" data-nav aria-label="Main navigation">
+      <a class="nav-logo" href="index.html" aria-label="Sips Coffee Corner home">
+        <span class="nav-logo-mark"><img src="Sip Logo.png" alt="" width="56" height="56"></span>
+        <span class="nav-logo-text">Sips Coffee Corner</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" aria-current="page" href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Find us</a></li>
+      </ul>
+      <div class="nav-right">
+        <a class="btn btn-dark nav-cta" href="contact.html">Come say hi</a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle><span></span></button>
+      </div>
+    </nav>
+    <div class="mobile-panel" data-mobile-panel>
+      <nav aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Find us</a>
+        <a class="btn btn-primary" href="contact.html">Come say hi</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">What we serve</span>
+        <h1>Little drinks,<br>big mood.</h1>
+        <p>Our menu is compact, seasonal, and made for slow mornings. Prices are sample prices for the project.</p>
+      </div>
+    </section>
+
+    <section class="section featured-band">
+      <div class="container split">
+        <figure class="image-card reveal">
+          <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Oat cortado with soft foam" loading="lazy">
+          <figcaption class="float-badge"><strong>Today only</strong><span>Oat cortado with cinnamon foam · € 4.20</span></figcaption>
+        </figure>
+        <div class="copy-stack reveal">
+          <span class="eyebrow">Today’s special</span>
+          <h2>Oat Cortado</h2>
+          <p class="special-sub">with cinnamon foam</p>
+          <p class="lead">Silky oat milk poured gently over a warm ristretto. Dusted with cinnamon. Best enjoyed without a plan.</p>
+          <div style="display:flex; align-items:center; gap:1rem; flex-wrap:wrap; margin-top:1.5rem;">
+            <span class="special-price">€ 4.20</span>
+            <span class="tag tag tag-terra tag-with-icon"><span class="tag-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v3"></path><path d="M12 18v3"></path><path d="M3 12h3"></path><path d="M18 12h3"></path><path d="m5.64 5.64 2.12 2.12"></path><path d="m16.24 16.24 2.12 2.12"></path><path d="m5.64 18.36 2.12-2.12"></path><path d="m16.24 7.76 2.12-2.12"></path><circle cx="12" cy="12" r="3.5"></circle></svg></span><span>House special</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filters reveal" aria-label="Filter menu categories">
+          <button class="filter-btn active" type="button" data-filter="all">All drinks</button>
+          <button class="filter-btn" type="button" data-filter="espresso">Espresso</button>
+          <button class="filter-btn" type="button" data-filter="filter">Filter</button>
+          <button class="filter-btn" type="button" data-filter="cold">Cold drinks</button>
+          <button class="filter-btn" type="button" data-filter="tea">Matcha & Tea</button>
+          <button class="filter-btn" type="button" data-filter="food">Food</button>
+          <button class="filter-btn" type="button" data-filter="evening">Evening</button>
+        </div>
+
+        <section class="menu-list-section reveal" data-category="espresso">
+          <div class="menu-cat-header"><h2 class="menu-cat-title">Espresso</h2><span class="menu-cat-line"></span></div>
+          <div class="menu-list">
+            <article class="menu-item"><div><div class="menu-item-name-row"><h3 class="menu-item-name">Espresso</h3><span class="tag tag-linen tag-with-icon"><span class="tag-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v5"></path><path d="M12 16h.01"></path></svg></span><span>classic</span></span></div><p class="menu-item-desc">Double shot, rich crema, short and serious.</p></div><span class="menu-item-price">€ 2.60</span></article>
+            <article class="menu-item"><div><div class="menu-item-name-row"><h3 class="menu-item-name">Flat White</h3><span class="tag tag-terra tag-with-icon"><span class="tag-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.35-7-10a4 4 0 0 1 7-2.65A4 4 0 0 1 19 10c0 5.65-7 10-7 10Z"></path></svg></span><span>house fave</span></span></div><p class="menu-item-desc">Silky microfoam over a double ristretto.</p></div><span class="menu-item-price">€ 3.80</span></article>
+            <article class="menu-item"><div><div class="menu-item-name-row"><h3 class="menu-item-name">Honey Latte</h3></div><p class="menu-item-desc">Espresso, steamed milk, and a ribbon of wildflower honey.</p></div><span class="menu-item-price">€ 4.50</span></article>
+            <article class="menu-item"><div><div class="menu-item-name-row"><h3 class="menu-item-name">Cappuccino</h3></div><p class="menu-item-desc">Balanced espresso, steamed milk, and a soft foam cap.</p></div><span class="menu-item-price">€ 3.60</span></article>
+          </div>
+        </section>
+
+        <section class="menu-list-section reveal" data-category="filter">
+          <div class="menu-cat-header"><h2 class="menu-cat-title">Filter</h2><span class="menu-cat-line"></span></div>
+          <div class="menu-list">
+            <article class="menu-item"><div><div class="menu-item-name-row"><h3 class="menu-item-name">Batch Brew</h3><span class="tag tag-linen tag-with-icon"><span class="tag-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v3"></path><path d="M12 18v3"></path><path d="M3 12h3"></path><path d="M18 12h3"></path><path d="m5.64 5.64 2.12 2.12"></path><path d="m16.24 16.24 2.12 2.12"></path><path d="m5.64 18.36 2.12-2.12"></path><path d="m16.24 7.76 2.12-2.12"></path><circle cx="12" cy="12" r="3.5"></circle></svg></span><span>rotating</span></span></div><p class="menu-item-desc">Fresh single origin coffee, brewed throughout the morning.</p></div><span class="menu-item-price">€ 3.20</span></article>
+            <article class="menu-item"><div><div class="menu-item-name-row"><h3 class="menu-item-name">Hand Brew</h3></div><p class="menu-item-desc">A slower pour-over for guests who have a few extra minutes.</p></div><span class="menu-item-price">€ 4.90</span></article>
+            <article class="menu-item"><div><div class="menu-item-name-row"><h3 class="menu-item-name">Cold Brew</h3></div><p class="menu-item-desc">Low-acid, smooth, and served over ice.</p></div><span class="menu-item-price">€ 4.20</span></article>
+          </div>
+        </section>
+
+        <section class="menu-list-section reveal" data-category="cold">
+          <div class="menu-cat-header"><h2 class="menu-cat-title">Cold drinks</h2><span class="menu-cat-line"></span></div>
+          <div class="menu-list">
+            <article class="menu-item"><div><div class="menu-item-name-row"><h3 class="menu-item-name">Iced Latte</h3></div><p class="menu-item-desc">Espresso, milk, ice, and optional vanilla.</p></div><span class="menu-item-price">€ 4.10</span></article>
+            <article class="menu-item"><div><div class="menu-item-name-row"><h3 class="menu-item-name">Iced Americano</h3></div><p class="menu-item-desc">Bright espresso over cold water and ice.</p></div><span class="menu-item-price">€ 3.40</span></article>
+            <article class="menu-item"><div><div class="menu-item-name-row"><h3 class="menu-item-name">Orange Espresso</h3><span class="tag tag-terra tag-with-icon"><span class="tag-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v3"></path><path d="M12 18v3"></path><path d="M3 12h3"></path><path d="M18 12h3"></path><path d="m5.64 5.64 2.12 2.12"></path><path d="m16.24 16.24 2.12 2.12"></path><path d="m5.64 18.36 2.12-2.12"></path><path d="m16.24 7.76 2.12-2.12"></path><circle cx="12" cy="12" r="3.5"></circle></svg></span><span>seasonal</span></span></div><p class="menu-item-desc">Fresh orange, espresso, and a little sparkle.</p></div><span class="menu-item-price">€ 4.80</span></article>
+          </div>
+        </section>
+
+        <section class="menu-list-section reveal" data-category="tea">
+          <div class="menu-cat-header"><h2 class="menu-cat-title">Matcha & Tea</h2><span class="menu-cat-line"></span></div>
+          <div class="menu-list">
+            <article class="menu-item"><div><div class="menu-item-name-row"><h3 class="menu-item-name">Iced Matcha</h3><span class="tag tag tag-sage tag-with-icon"><span class="tag-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 21c8 0 12-6 12-14-8 0-12 6-12 14Z"></path><path d="M6 21c0-7 5-11 12-14"></path></svg></span><span>vegan</span></span></div><p class="menu-item-desc">Ceremonial grade, whisked to order, with oat milk.</p></div><span class="menu-item-price">€ 4.50</span></article>
+            <article class="menu-item"><div><div class="menu-item-name-row"><h3 class="menu-item-name">Hojicha Latte</h3></div><p class="menu-item-desc">Roasted Japanese tea, nutty and soft.</p></div><span class="menu-item-price">€ 4.70</span></article>
+            <article class="menu-item"><div><div class="menu-item-name-row"><h3 class="menu-item-name">Fresh Mint Tea</h3></div><p class="menu-item-desc">Mint leaves, lemon, and warm water. Simple and calm.</p></div><span class="menu-item-price">€ 3.40</span></article>
+          </div>
+        </section>
+
+        <section class="menu-list-section reveal" data-category="food">
+          <div class="menu-cat-header"><h2 class="menu-cat-title">Food</h2><span class="menu-cat-line"></span></div>
+          <div class="menu-list">
+            <article class="menu-item"><div><div class="menu-item-name-row"><h3 class="menu-item-name">Cardamom Bun</h3><span class="tag tag tag-terra tag-with-icon"><span class="tag-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v3"></path><path d="M12 18v3"></path><path d="M3 12h3"></path><path d="M18 12h3"></path><path d="m5.64 5.64 2.12 2.12"></path><path d="m16.24 16.24 2.12 2.12"></path><path d="m5.64 18.36 2.12-2.12"></path><path d="m16.24 7.76 2.12-2.12"></path><circle cx="12" cy="12" r="3.5"></circle></svg></span><span>bakery</span></span></div><p class="menu-item-desc">Soft, spiced, and delivered fresh from our neighborhood bakery.</p></div><span class="menu-item-price">€ 3.70</span></article>
+            <article class="menu-item"><div><div class="menu-item-name-row"><h3 class="menu-item-name">Banana Bread</h3></div><p class="menu-item-desc">Toasted if you want. Best with filter coffee.</p></div><span class="menu-item-price">€ 3.90</span></article>
+            <article class="menu-item"><div><div class="menu-item-name-row"><h3 class="menu-item-name">Avocado Toast</h3></div><p class="menu-item-desc">Sourdough, lemon, chili flakes, and herbs.</p></div><span class="menu-item-price">€ 7.20</span></article>
+          </div>
+        </section>
+
+        <section class="menu-list-section reveal" data-category="evening">
+          <div class="menu-cat-header"><h2 class="menu-cat-title">Evening</h2><span class="menu-cat-line"></span></div>
+          <div class="menu-list">
+            <article class="menu-item"><div><div class="menu-item-name-row"><h3 class="menu-item-name">Espresso Martini</h3><span class="tag tag tag-linen tag-with-icon"><span class="tag-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"></path></svg></span><span>after 5pm</span></span></div><p class="menu-item-desc">Dark, bold, chilled, and a little extra.</p></div><span class="menu-item-price">€ 9.50</span></article>
+            <article class="menu-item"><div><div class="menu-item-name-row"><h3 class="menu-item-name">Coffee Negroni</h3></div><p class="menu-item-desc">Bitter, smooth, and made for slow conversations.</p></div><span class="menu-item-price">€ 9.20</span></article>
+          </div>
+        </section>
+
+        <div class="dietary-key reveal" aria-label="Menu key">
+          <div class="dietary-chip dietary-vegan">
+            <span class="dietary-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 21c8 0 12-6 12-14-8 0-12 6-12 14Z"></path><path d="M6 21c0-7 5-11 12-14"></path></svg>
+            </span>
+            <div><strong>Vegan options</strong><span>Look for the green tags · oat milk available.</span></div>
+          </div>
+          <div class="dietary-chip dietary-seasonal">
+            <span class="dietary-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3"></path><path d="M12 18v3"></path><path d="M3 12h3"></path><path d="M18 12h3"></path><path d="m5.64 5.64 2.12 2.12"></path><path d="m16.24 16.24 2.12 2.12"></path><path d="m5.64 18.36 2.12-2.12"></path><path d="m16.24 7.76 2.12-2.12"></path><circle cx="12" cy="12" r="3.5"></circle></svg>
+            </span>
+            <div><strong>Seasonal</strong><span>Terracotta tags mean rotating or limited drinks.</span></div>
+          </div>
+          <div class="dietary-chip dietary-allergy">
+            <span class="dietary-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v5"></path><path d="M12 16h.01"></path></svg>
+            </span>
+            <div><strong>Allergies</strong><span>Please ask the counter team before ordering.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img class="footer-logo" src="Sip Logo.png" alt="Sips Coffee Corner logo" width="48" height="48">
+          <p class="footer-tagline">Soft coffee for slow mornings. Berlin, since 2023.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Navigate</div>
+          <a class="footer-link" href="index.html">Home</a>
+          <a class="footer-link" href="menu.html">Menu</a>
+          <a class="footer-link" href="about.html">About</a>
+          <a class="footer-link" href="contact.html">Find us</a>
+        </div>
+        <div>
+          <div class="footer-heading">Visit</div>
+          <p class="footer-text">Kastanienallee 12<br>10435 Berlin<br>Prenzlauer Berg</p>
+        </div>
+        <div>
+          <div class="footer-heading">Say hi</div>
+          <a class="footer-link" href="mailto:bvlsebastian@gmail.com">bvlsebastian@gmail.com</a>
+          <a class="footer-link" href="tel:+491774768510">+49 177 476 8510</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Sips Coffee Corner · Berlin</span>
+        <span>Soft sips, serious taste.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

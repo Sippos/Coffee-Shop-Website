@@ -3,74 +3,181 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Sips Coffee Corner</title>
+  <meta name="description" content="Find Sips Coffee Corner in Prenzlauer Berg, Berlin. View opening hours, contact details, and send a message.">
+  <title>Find Us | Sips Coffee Corner</title>
   <link rel="stylesheet" href="style.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <header class="site-header small-header">
-    <nav class="navbar">
-      <a class="brand" href="index.html">Sips Coffee Corner</a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-      <ul>
+  <header>
+    <nav class="nav" data-nav aria-label="Main navigation">
+      <a class="nav-logo" href="index.html" aria-label="Sips Coffee Corner home">
+        <span class="nav-logo-mark"><img src="Sip Logo.png" alt="" width="56" height="56"></span>
+        <span class="nav-logo-text">Sips Coffee Corner</span>
+      </a>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About us</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" aria-current="page" href="contact.html">Find us</a></li>
       </ul>
+      <div class="nav-right">
+        <a class="btn btn-dark nav-cta" href="contact.html">Come say hi</a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle><span></span></button>
+      </div>
     </nav>
-
-    <section class="page-title">
-      <h1>Come sip with us.</h1>
-
-      <address>
-        <p>
-          <a href="mailto:bvlsebastian@gmail.com">bvlsebastian@gmail.com</a><br>
-          <a href="tel:+491774768510">+49 177 4768510</a>
-        </p>
-      </address>
-    </section>
+    <div class="mobile-panel" data-mobile-panel>
+      <nav aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Find us</a>
+        <a class="btn btn-primary" href="contact.html">Come say hi</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="contact-layout">
-      <figure>
-        <img
-          src="https://images.pexels.com/photos/20011903/pexels-photo-20011903.jpeg"
-          alt="Coffee shop interior"
-        >
-      </figure>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Find us</span>
+        <h1>Come sip<br>with us.</h1>
+        <p>Need a table, want to ask about events, or just want to say hi? We are easy to reach.</p>
+      </div>
+    </section>
 
-      <section class="form-card">
-        <h2>Contact Form</h2>
+    <section class="section section-soft">
+      <div class="container location-grid">
+        <figure class="image-card map-card reveal">
+          <img src="https://images.pexels.com/photos/20011903/pexels-photo-20011903.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Coffee shop interior" loading="lazy">
+          <figcaption class="float-badge"><strong>Prenzlauer Berg</strong><span>Kastanienallee 12, 10435 Berlin</span></figcaption>
+        </figure>
 
-        <form>
-          <p>
-            <label for="name">Name</label>
-            <input id="name" type="text" name="name">
-          </p>
+        <div class="info-stack">
+          <article class="card info-card reveal">
+            <span class="eyebrow">Address</span>
+            <h2 class="info-card-title">Kastanienallee 12</h2>
+            <p>10435 Berlin<br>Prenzlauer Berg</p>
+            <p style="margin-top:1rem;"><a href="mailto:bvlsebastian@gmail.com">bvlsebastian@gmail.com</a><br><a href="tel:+491774768510">+49 177 476 8510</a></p>
+          </article>
 
-          <p>
-            <label for="email">Email</label>
-            <input id="email" type="email" name="email">
-          </p>
+          <article class="card info-card reveal">
+            <span class="eyebrow">Opening hours</span>
+            <h2 class="info-card-title">Slow mornings, every day.</h2>
+            <div class="hours-table">
+              <p class="row"><strong>Monday</strong><span>08:00 – 19:00</span></p>
+              <p class="row"><strong>Tuesday</strong><span>08:00 – 19:00</span></p>
+              <p class="row"><strong>Wednesday</strong><span>08:00 – 19:00</span></p>
+              <p class="row"><strong>Thursday</strong><span>08:00 – 19:00</span></p>
+              <p class="row"><strong>Friday</strong><span>08:00 – 20:00</span></p>
+              <p class="row"><strong>Weekend</strong><span>09:00 – 18:00</span></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-          <p>
-            <label for="message">Message</label>
-            <textarea id="message" name="message"></textarea>
-          </p>
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="copy-stack reveal">
+          <span class="eyebrow">Message us</span>
+          <h2>Questions, bookings,<br>soft hellos.</h2>
+          <p class="lead">Use the form for event requests, feedback, collaborations, or anything else that needs a warm reply.</p>
+          <p>This form is front-end only for the portfolio project. To make it send emails, connect it to Formspree, Netlify Forms, or your own backend later.</p>
+        </div>
 
-          <button type="submit">Send</button>
-        </form>
-      </section>
+        <section class="card form-card reveal" aria-labelledby="contact-form-title">
+          <h2 id="contact-form-title" class="h3" style="margin-bottom:1.2rem;">Contact form</h2>
+          <form data-contact-form>
+            <div class="form-row">
+              <p class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" placeholder="Marie K." required>
+              </p>
+              <p class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="your@email.com" required>
+              </p>
+            </div>
+            <p class="field">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" placeholder="Event booking, feedback, just saying hi...">
+            </p>
+            <p class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="What is on your mind?" required></textarea>
+            </p>
+            <button class="btn btn-primary" type="submit">Send message</button>
+            <div class="form-success" data-contact-message role="status">Thanks — your message is ready to be wired to a real form service.</div>
+          </form>
+        </section>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow">Getting here</span>
+            <h2>Easy to find,<br>hard to leave.</h2>
+          </div>
+        </div>
+        <div class="transport-grid">
+          <article class="card transport-card reveal"><span class="tag tag-terra">Tram</span><h3 class="transport-title">M10 nearby</h3><p class="transport-desc">A short walk from the main Prenzlauer Berg tram stops.</p></article>
+          <article class="card transport-card reveal"><span class="tag tag-sage">Bike</span><h3 class="transport-title">Bike-friendly</h3><p class="transport-desc">Plenty of street parking for bikes right outside.</p></article>
+          <article class="card transport-card reveal"><span class="tag tag-linen">Walk</span><h3 class="transport-title">Weekend strolls</h3><p class="transport-desc">Close to small shops, galleries, and sunny corners.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container newsletter-grid">
+        <div class="reveal">
+          <span class="eyebrow">Follow along</span>
+          <h2>Soft updates,<br>no noise.</h2>
+          <p style="color:rgba(255,247,234,0.65); margin-top:1rem;">Find us where the morning light lands.</p>
+        </div>
+        <div class="social-row reveal">
+          <a class="social-pill" href="#" aria-label="Instagram">Instagram</a>
+          <a class="social-pill" href="#" aria-label="TikTok">TikTok</a>
+          <a class="social-pill" href="mailto:bvlsebastian@gmail.com">Email</a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2026 Sips Coffee Corner</p>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img class="footer-logo" src="Sip Logo.png" alt="Sips Coffee Corner logo" width="48" height="48">
+          <p class="footer-tagline">Soft coffee for slow mornings. Berlin, since 2023.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Navigate</div>
+          <a class="footer-link" href="index.html">Home</a>
+          <a class="footer-link" href="menu.html">Menu</a>
+          <a class="footer-link" href="about.html">About</a>
+          <a class="footer-link" href="contact.html">Find us</a>
+        </div>
+        <div>
+          <div class="footer-heading">Visit</div>
+          <p class="footer-text">Kastanienallee 12<br>10435 Berlin<br>Prenzlauer Berg</p>
+        </div>
+        <div>
+          <div class="footer-heading">Say hi</div>
+          <a class="footer-link" href="mailto:bvlsebastian@gmail.com">bvlsebastian@gmail.com</a>
+          <a class="footer-link" href="tel:+491774768510">+49 177 476 8510</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Sips Coffee Corner · Berlin</span>
+        <span>Soft sips, serious taste.</span>
+      </div>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
